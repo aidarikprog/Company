@@ -1,0 +1,334 @@
+
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+:root{
+    --color-white: #FFFFFF;
+    --color-gray: #838383;
+    --color-dark:#1D1D1F;
+    --offset: 190px;    /* отступы м\у секциями */
+}
+.container{
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1220px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+}
+/* =================================== */
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.hero{
+    background-image: url('../img/hero-cover.jpg');
+    height: 100vh;  /* что б во вксь экран устр-ва */
+    min-height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 400px;
+}
+.logo{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+}
+
+button{
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.header__search{
+    margin-right: 35px;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+}
+.nav__item + .nav__item{
+    margin-left: 35px;
+}
+/* =================== */
+.hero__title{
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 116px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    max-width: 936px;
+}
+.hero__subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    max-width: 468px;
+}
+.btn--light{
+    font-weight: 600;
+font-size: 17px;
+line-height: 21px;
+text-align: center;
+color: #1D1D1F;
+background: #FFFFFF;
+padding: 20px 60px;
+cursor: pointer;
+}
+/* ================== */
+.about__top{
+    padding: var(--offset) 0;
+
+}
+.about__col{
+    gap: 60px;
+}
+.complited__value{
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 140%;
+}
+.complited__descr{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+.about__item + .about__item{
+    margin-top: 60px;
+}
+.about__title{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 140%;
+    margin-bottom: 60px;
+    max-width: 570px;
+}
+.about__descr{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 570px;
+}
+
+/* ========================================= */
+.about__play--hidden{
+    display: none;
+}
+.about__video{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 630px;
+    margin-bottom: var(--offset);
+}
+.about__video video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about__play{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.about__play svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ==================== */
+.btn-dark{
+padding: 19px 60px;
+background-color: #1D1D1F;
+color: white;
+font-weight: 600;
+font-size: 17px;
+line-height: 21px;
+text-align: center;
+}
+
+.portfolio-item__title{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #838383;
+    margin-bottom: 20px;
+}
+.portfolio-item__descr{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1D1D1F;
+    margin-bottom: 60px;
+}
+.portfolio-item{
+    margin-bottom: 120px;
+}
+/* по центру, в колоне */
+.portfolio-item__col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* ======================== */
+.quote__content{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 150%;
+    color: #1D1D1F;
+    margin-bottom: 30px;
+}
+.quote__title{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #838383;
+    margin-bottom: 50px;
+}
+.quote__autor{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1D1D1F;
+}
+.quote__autor span{
+    color: #838383;
+}
+.quote__container{
+    margin-bottom: var(--offset);
+}
+/* ================ */
+.services__image{
+    max-width: 100%;
+    margin-bottom: var(--offset);
+}
+/* ================= */
+.services-item__title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    color: #1D1D1F;
+}
+.services-item__descr{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #838383;
+}
+.services-item{
+   border-top: 1px solid rgba(29, 28, 31, 0.4);
+   padding: 40px 0;
+}
+/* }======================== */
+.footer{
+    background-color: #1D1D1F;
+    padding-top: 90px;
+    padding-bottom: var(--offset);
+}
+.footer__address{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #838383;
+    padding-bottom: 30px;
+}
+.footer__logo{
+    display: inline-block;
+    padding-bottom: 40px;
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.social_link + .social_link{
+    margin-left: 20px;
+}
+.social_link svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*  */
+.footer__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    color: white;
+}
+
+  
+  .footer__form {
+    position: relative;
+    width: 50%;
+  }
+  
+  .footer__input {
+    border: none;
+    border-bottom: 1px solid #838383 ;
+    padding: 24px 0;
+    padding-right: 30px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .footer__input::placeholder {
+    color: white;
+  }
+  
+  .footer__btn {
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer__btn svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /* ------------------ */
+  
